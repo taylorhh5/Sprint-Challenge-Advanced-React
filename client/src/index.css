@@ -35,7 +35,7 @@ code {
     height: 70px;
     justify-content: space-between;
     padding: 0 3%;
-    width: 100%;
+    width: 95%;
     -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
     box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
@@ -63,3 +63,8 @@ code {
   .toggled {
     left: 18px;
   }
+
+  /* .ui.card{
+    color:darkblue !important;
+    background: grey!important;
+  } */

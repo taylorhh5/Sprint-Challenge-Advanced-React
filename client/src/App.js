@@ -4,15 +4,33 @@ import axios from 'axios';
 import Cards from './SoccerCards.js';
 import Navbar from './NavBar.js'
 
+
+
+
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       stats: [],      
-
+      count: 0
 
     }
+    this.handleClick = this.handleClick.bind(this)
   };
+
+  
+  
+  
+  handleClick() {
+    this.setState(prevState => {
+        return {
+            count: prevState.count + 1
+        }
+    })
+    const hit = () => {
+      this.count(0) 
+  }
+}
 
   componentDidMount() {
     axios
@@ -31,6 +49,9 @@ class App extends React.Component {
  
   <div className="stats">
     <h1>Statistics</h1>
+    <h3>2019</h3>
+    <h1>{this.state.count}</h1>
+                <button onClick={this.handleClick}>Press the button for how much you like soccer!</button>
     <Navbar />
       {this.state.stats.map(stats => (
         <Cards
