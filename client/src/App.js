@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import Cards from './SoccerCards.js'
+import Cards from './SoccerCards.js';
+import Navbar from './NavBar.js'
 
 class App extends React.Component {
   constructor() {
@@ -29,6 +30,7 @@ class App extends React.Component {
     return (
  
   <div className="stats">
+    <Navbar />
       {this.state.stats.map(stats => (
         <Cards
         stats={stats}
