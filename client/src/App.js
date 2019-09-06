@@ -30,6 +30,7 @@ class App extends React.Component {
     return (
  
   <div className="stats">
+    <h1>Statistics</h1>
     <Navbar />
       {this.state.stats.map(stats => (
         <Cards
